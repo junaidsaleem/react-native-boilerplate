@@ -4,8 +4,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {navigationRef} from './rootNavigation';
 import ScreenNames from '../constants/screenNames';
 //Screens
-import SplashScreen from '../screens/splash';
-import HomeScreen from '../screens/home';
+import SplashScreen from 'screens/splash';
+import HomeScreen from 'screens/home';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,7 +21,7 @@ const Navigation = () => (
         name={ScreenNames.Home}
         component={HomeScreen}
         options={{
-          animation: 'slide_from_bottom', // Customize the transition animation
+          animation: 'slide_from_right', // Customize the transition animation
         }}
       />
     </Stack.Navigator>
