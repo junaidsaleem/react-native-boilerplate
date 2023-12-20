@@ -7,12 +7,13 @@ module.exports = {
         root: ['./src'], // The root folder
         alias: {
           // Define your path aliases here
-          components: './src/components',
-          screens: './src/screens',
-          navigation: './src/navigation',
-          utils: './src/utils',
-          style: './src/styles',
-          store: './src/store',
+          '~components': './src/components',
+          '~screens': './src/screens',
+          '~navigation': './src/navigation',
+          '~utils': './src/utils',
+          '~style': './src/styles',
+          '~store': './src/store',
+          '~routes': './src/constants/routes',
           // Add other aliases as needed
         },
       },

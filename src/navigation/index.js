@@ -2,10 +2,10 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {navigationRef} from './rootNavigation';
-import ScreenNames from '../constants/screenNames';
+import routes from '~routes';
 //Screens
 import SplashScreen from 'screens/splash';
-import HomeScreen from 'screens/home';
+import BottomTabNavigation from './bottomTabs';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,10 +16,10 @@ const Navigation = () => (
         headerTitle: '',
         headerShown: false,
       }}>
-      <Stack.Screen name={ScreenNames.Splash} component={SplashScreen} />
+      <Stack.Screen name={routes.splash} component={SplashScreen} />
       <Stack.Screen
-        name={ScreenNames.Home}
-        component={HomeScreen}
+        name={routes.bottomTab}
+        component={BottomTabNavigation}
         options={{
           animation: 'slide_from_right', // Customize the transition animation
         }}
